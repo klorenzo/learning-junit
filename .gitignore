@@ -1,0 +1,7 @@
+# GitIgnore File by Kevin Lorenzo ( Software Engineer )
+
+*.iml
+
+.idea/
+
+target/
