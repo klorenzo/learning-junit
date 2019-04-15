@@ -1,2 +1,2 @@
-# learning-junit
-JUnit Tests
+# Learning JUnit
+Pending description...
