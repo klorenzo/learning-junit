@@ -1,4 +1,4 @@
-package com.kevinlorenzo.learning.junit;
+package com.kevinlorenzo.learning.junit.util;
 
 public class PasswordUtil {
 

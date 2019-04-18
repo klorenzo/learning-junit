@@ -1,4 +1,6 @@
-package com.kevinlorenzo.learning.junit;
+package com.kevinlorenzo.learning.junit.util;
+
+import com.kevinlorenzo.learning.junit.util.StringUtils;
 
 public class StringUtilsManualTests {
 

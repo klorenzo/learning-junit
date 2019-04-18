@@ -1,9 +1,10 @@
-package com.kevinlorenzo.learning.junit;
+package com.kevinlorenzo.learning.junit.util;
 
+import com.kevinlorenzo.learning.junit.util.PasswordUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static com.kevinlorenzo.learning.junit.PasswordUtil.SecurityLevel.*;
+import static com.kevinlorenzo.learning.junit.util.PasswordUtil.SecurityLevel.*;
 
 public class PasswordUtilTest {
 

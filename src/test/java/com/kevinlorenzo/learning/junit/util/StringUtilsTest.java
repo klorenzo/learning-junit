@@ -1,5 +1,6 @@
-package com.kevinlorenzo.learning.junit;
+package com.kevinlorenzo.learning.junit.util;
 
+import com.kevinlorenzo.learning.junit.util.StringUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
