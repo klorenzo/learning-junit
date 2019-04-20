@@ -1,14 +1,12 @@
 package com.kevinlorenzo.learning.junit.util;
 
-import com.kevinlorenzo.learning.junit.util.StringUtils;
-
-public class StringUtilsManualTests {
+public class StringUtilManualTests {
 
     public static void main(String[] args) {
 
         // Forma manual para probar la funcionalidad, imprimiendo en STDOUT.
 
-        String result1 = StringUtils.repeat("Hola", 3);
+        String result1 = StringUtil.repeat("Hola", 3);
 
         if(result1.equals("HolaHolaHola")) {
             System.out.println(">>> RESULT 1: OK");
@@ -16,7 +14,7 @@ public class StringUtilsManualTests {
             System.out.println(">>> RESULT 1: ERROR");
         }
 
-        String result2 = StringUtils.repeat("Hola", 1);
+        String result2 = StringUtil.repeat("Hola", 1);
 
         if(result2.equals("Hola")) {
             System.out.println(">>> RESULT 2: OK");
@@ -26,7 +24,7 @@ public class StringUtilsManualTests {
 
         // Forma manual para probar la funcionalidad, lanzando Excepciones.
 
-        String result1Throw = StringUtils.repeat("Hola", 3);
+        String result1Throw = StringUtil.repeat("Hola", 3);
 
         if(result1Throw.equals("HolaHolaHola")) {
             System.out.println(">>> RESULT 1 Throw: OK");
@@ -34,7 +32,7 @@ public class StringUtilsManualTests {
             throw new RuntimeException("ERROR");
         }
 
-        String result2Throw = StringUtils.repeat("Hola", 1);
+        String result2Throw = StringUtil.repeat("Hola", 1);
 
         if(result2Throw.equals("Hola")) {
             System.out.println(">>> RESULT 2 Throw: OK");
@@ -46,12 +44,12 @@ public class StringUtilsManualTests {
 
         // Inline Variable
 
-        assertEquals(StringUtils.repeat("Hola", 3), "HolaHolaHola");
+        assertEquals(StringUtil.repeat("Hola", 3), "HolaHolaHola");
         System.out.println(">>> RESULT 1 Assert: OK");
 
         // Not Inline Variable
 
-        String result2Assert = StringUtils.repeat("Hola", 1);
+        String result2Assert = StringUtil.repeat("Hola", 1);
         assertEquals(result2Assert, "Hola");
         System.out.println(">>> RESULT 2 Assert: OK");
 

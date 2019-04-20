@@ -1,6 +1,6 @@
 package com.kevinlorenzo.learning.junit.util;
 
-public class StringUtils {
+public class StringUtil {
 
     public static String repeat(String text, int times) {
 
@@ -16,6 +16,10 @@ public class StringUtils {
 
         return result;
 
+    }
+
+    public static boolean isEmpty(String str) {
+        return (str == null) || (str.trim().length() == 0);
     }
 
 }
