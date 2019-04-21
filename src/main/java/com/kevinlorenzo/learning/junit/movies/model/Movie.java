@@ -22,6 +22,10 @@ public class Movie {
         return id;
     }
 
+    public int getMinutes() {
+        return minutes;
+    }
+
     public Genre getGenre() {
         return genre;
     }
