@@ -25,13 +25,13 @@ public class MovieRepositoryJdbc implements MovieRepository {
 
     @Override
     public Movie findById(long id) {
-        return null;
+        Object[] params = {id};
+        return this.jdbcTemplate.queryForObject("SELECT * FROM movies AS m WHERE m.id = ?", params, movieMapper);
     }
 
     @Override
     public Collection<Movie> findAll() {
-
-        return jdbcTemplate.query("SELECT * FROM movies;", movieMapper);
+        return this.jdbcTemplate.query("SELECT * FROM movies;", movieMapper);
     }
 
     @Override
