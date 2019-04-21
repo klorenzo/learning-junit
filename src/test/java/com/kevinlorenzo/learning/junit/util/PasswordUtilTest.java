@@ -1,6 +1,5 @@
 package com.kevinlorenzo.learning.junit.util;
 
-import com.kevinlorenzo.learning.junit.util.PasswordUtil;
 import org.junit.Assert;
 import org.junit.Test;
 

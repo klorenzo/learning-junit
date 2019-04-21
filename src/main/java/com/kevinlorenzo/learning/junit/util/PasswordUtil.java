@@ -8,11 +8,7 @@ public class PasswordUtil {
 
     public static SecurityLevel assessPassword(String password) {
 
-        if(password.length() < 8) {
-            return SecurityLevel.WEAK;
-        }
-
-        if(password.matches("[a-zA-Z]+")) {
+        if((password.length() < 8) || password.matches("[a-zA-Z]+")) {
             return SecurityLevel.WEAK;
         }
 
