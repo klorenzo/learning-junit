@@ -59,4 +59,17 @@ public class MovieRepositoryIntegrationTest {
                 CoreMatchers.is(new Movie(2, "Memento", 113, Genre.THRILLER)));
     }
 
+    @Test
+    public void insert_a_movie() {
+        Movie movie = new Movie("Super 8", 112, Genre.THRILLER);
+
+        this.movieRepositoryJdbc.saveOrUpdate(movie);
+
+        Movie movieFromDb = this.movieRepositoryJdbc.findById(4);
+
+        movie.setId(movieFromDb.getId());
+
+        Assert.assertThat(movieFromDb, CoreMatchers.is(movie));
+    }
+
 }
