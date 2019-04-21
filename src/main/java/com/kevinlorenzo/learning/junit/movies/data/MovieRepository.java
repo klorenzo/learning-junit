@@ -1,0 +1,15 @@
+package com.kevinlorenzo.learning.junit.movies.data;
+
+import com.kevinlorenzo.learning.junit.movies.model.Movie;
+
+import java.util.Collection;
+
+public interface MovieRepository {
+
+    Movie findById(long id);
+
+    Collection<Movie> findAll();
+
+    void saveOrUpdate(Movie movie);
+
+}
